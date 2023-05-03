@@ -15,10 +15,6 @@
 .vibrate-1:hover{-webkit-animation:vibrate-1 1.5s linear infinite both;animation:vibrate-1 1.5s linear infinite both}
 
 
-/*menu*/
- @-webkit-keyframes wobble-ver-left{0%,100%{-webkit-transform:translateY(0) rotate(0);transform:translateY(0) rotate(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}15%{-webkit-transform:translateY(-30px) rotate(-6deg);transform:translateY(-30px) rotate(-6deg)}30%{-webkit-transform:translateY(15px) rotate(6deg);transform:translateY(15px) rotate(6deg)}45%{-webkit-transform:translateY(-15px) rotate(-3.6deg);transform:translateY(-15px) rotate(-3.6deg)}60%{-webkit-transform:translateY(9px) rotate(2.4deg);transform:translateY(9px) rotate(2.4deg)}75%{-webkit-transform:translateY(-6px) rotate(-1.2deg);transform:translateY(-6px) rotate(-1.2deg)}}@keyframes wobble-ver-left{0%,100%{-webkit-transform:translateY(0) rotate(0);transform:translateY(0) rotate(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}15%{-webkit-transform:translateY(-30px) rotate(-6deg);transform:translateY(-30px) rotate(-6deg)}30%{-webkit-transform:translateY(15px) rotate(6deg);transform:translateY(15px) rotate(6deg)}45%{-webkit-transform:translateY(-15px) rotate(-3.6deg);transform:translateY(-15px) rotate(-3.6deg)}60%{-webkit-transform:translateY(9px) rotate(2.4deg);transform:translateY(9px) rotate(2.4deg)}75%{-webkit-transform:translateY(-6px) rotate(-1.2deg);transform:translateY(-6px) rotate(-1.2deg)}}
- .wobble-ver-left:hover{-webkit-animation:wobble-ver-left .8s both;animation:wobble-ver-left .8s both}
-
 /*icon site*/
  @-webkit-keyframes rotate-in-center{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);opacity:0}100%{-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotate-in-center{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);opacity:0}100%{-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}
  .rotate-in-center{-webkit-animation:rotate-in-center 30s cubic-bezier(.25,.46,.45,.94) infinite;animation:rotate-in-center 30s cubic-bezier(.25,.46,.45,.94) infinite}
