@@ -1,0 +1,79 @@
+/*Mobile*/
+@media (max-width: 986px) {
+
+  .titulo-nav, .titulo-nav-active{
+    font-size: 2em;
+  }
+
+  .alterar-posicao-mobile{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .alterar-posicao-contato{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .contato-link{
+    font-size: 1em;
+  }
+
+
+
+  .titulo-dev{
+    font-size: 3em;
+  }
+
+  span{
+    font-size: 0.8em;
+  }
+
+  .subtitulo-white-dev{
+    font-size: 0.9em;
+  }
+  
+  .icon-reposive{
+    width: 25%;
+  }
+
+  .cardev-img{
+    width: 100%;
+  }
+
+  .contato-descricao{
+    width: 90%;
+  }
+
+  .fundoCard-terco-img{
+    background-image:url("../img/card/responive-terco.jpg");
+    background-position: center;
+  }
+  .fundoCard-agcf-img{
+    background-image:url("../img/card/responive-agcf.jpg");
+    background-position: center;
+  }
+  .fundoCard-4ucode-img{
+    background-image:url("../img/card/responive-4ucode.jpg");
+    background-position: center;
+  }
+
+ 
+
+}
+
+
+
+/*Desktop*/
+@media (min-width: 768px) {
+  .ocultar-bio-moblie{
+    display:flex;
+  }
+}
+
+@media (min-width: 1245px) {
+
+
+}

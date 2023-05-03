@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=PT+Sans+Narrow&display=swap');
+
+:root{
+/*--Cores--*/
+/*site*/
+ --color-fundo: #1B1A17;
+ --color-fundo-header: #21201D;
+ --color-fundo-segundario: #1F1E1B;
+ --color-botao: #32312E;
+ --color-hover: #A35709;
+ --color-padrao:#FF8303;
+ --color-letra: #F0E3CA;
+ --color-gradiente: linear-gradient(to bottom, #21201d, #252421, #292825, #2e2d2a, #32312e);
+/*habilidades*/
+--color-html:#FC490B;
+--color-bootstrap:#7952B3;
+--color-javascript:#FFDF00;
+--color-wordpress:#2196F4;
+--color-git:#CA669B;
+ /*Fontes*/
+ --font-padrao: 'Inconsolata', monospace;
+ --font-linguagem: 'PT Sans Narrow', sans-serif;
+}
+
+
+h2, p, i{
+  color: var(--color-letra);
+  font-family: var(--font-padrao);
+}
+
+a {
+  text-decoration-line: none;
+}
+
+
+span {
+  font-style: italic;
+  color: var(--color-letra);
+  font-family: var(--font-padrao);
+}
+
+p{
+  font-size: 0.8rem;
+}
+
+.titulo-cor, a{
+  color: var(--color-padrao);
+}
+
+.nav-link-cor a{
+  color: var(--color-letra);
+  font-family: var(--font-letra);
+  text-decoration-line: none;
+}
+
+
+.logo-size{
+  width: 156px;
+  height: 49px;
+}
+
+header{
+  background-color: var(--color-fundo-header);
+}
+
+.titulo-nav-active{
+  color: var(--color-padrao);
+  font-family: var(--font-padrao);
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.titulo-nav{
+  color: var(--color-letra);
+  font-family: var(--font-padrao);
+  font-size: 1em;
+  font-weight:700;
+}
+
+#sobre, #habilidades, .fundo-padrao{
+  background-image: var(--color-gradiente);
+}
+.fundo-segundario, #contato{
+  background-color: var(--color-fundo-segundario);
+}
+
+
+.titulo-dev, .contato-link{
+  color: var(--color-padrao);
+  font-family: var(--font-padrao);
+  font-size: 4em;
+  font-weight: 900;
+}
+
+
+.titulo-card{
+  font-size: 2em;
+}
+
+.subtitulo-dev{
+  color: var(--color-padrao);
+  font-family: var(--font-padrao);
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.subtitulo-white-dev{
+  color: var(--color-letra);
+  font-family: var(--font-padrao);
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.text-bio{
+  width: 80%;
+}
+
+.cardev{
+  font-family: var(--font-linguagem);
+  color: var(--color-letra);
+  background-color: var(--color-fundo-segundario);
+  border-radius: 10px;
+  height: 320px;
+  width: 320px;
+}
+
+.cardev-img{
+  height: 320px;
+  width: 320px;
+  border-radius: 10px;
+}
+.imgdev{
+  width: 128px;
+  height: 128px;
+}
+
+#trabalhos{
+  background-color: var(--color-fundo-segundario);
+  font-family: var(--font-linguagem);
+  color: var(--color-letra);
+}
+
+.card-work{
+  color: var(--color-letra);
+  background-color: var(--color-fundo-segundario);
+  border-radius: 10px;
+  padding: 32px;
+  margin: 10px;
+}
+/*hovers dos icons */
+#card-hover-html:hover path{
+  fill: var(--color-html);
+}
+#letra-hover-html:hover {
+  color:var(--color-html);
+}
+#card-hover-bootstrap:hover path{
+  fill: var(--color-bootstrap);
+}
+#letra-hover-bootstrap:hover {
+  color:var(--color-bootstrap);
+}
+#card-hover-javascript:hover path{
+  fill:var(--color-javascript);
+}
+#letra-hover-javascript:hover {
+  color:var(--color-javascript);
+}
+#card-hover-wordpress:hover path{
+  fill: var(--color-wordpress);
+}
+#letra-hover-wordpress:hover {
+  color: var(--color-wordpress);
+}
+#card-hover-git:hover path{
+  fill:var(--color-git);
+}
+#letra-hover-git:hover {
+  color: var(--color-git);
+}
+
+.remover-link-cor {
+ text-decoration: none;
+ color: var(--color-letra);
+}
+
+/*Card: Santo Terço*/
+.fundoCard-terco{
+  background-image:url("../img/card/santoTerco-card.jpg");
+}
+.fundoCard-terco-img{
+  background-image:url("../img/card/santoTerco.jpg");
+}
+
+/*Card: AGCF*/
+.fundoCard-agcf{
+  background-image:url("../img/card/agcf-card.png");
+}
+.fundoCard-agcf-img{
+  background-image:url("../img/card/agcf.jpg");
+}
+
+/*Card: 4uCode*/
+.fundoCard-4ucode{
+  background-image:url("../img/card/4ucode-card.png");
+}
+.fundoCard-4ucode-img{
+  background-image:url("../img/card/4ucode.jpg");
+}
+
+.botao-card{
+  background: var(--color-botao);
+  padding: 5px;
+  margin: 25px;
+  height: 32px;
+  width:  110px;
+  border-radius: 4px;
+  border-color: transparent;
+}
+.botao-card:hover{
+  background: var(--color-hover);
+}
+
+.contato-descricao{
+  width: 50%;
+}
+
+.contato-letra-icon{
+  font-size: 1.5em;
+}
+
+
