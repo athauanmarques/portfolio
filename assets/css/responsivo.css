@@ -36,9 +36,6 @@
     font-size: 0.8em;
   }
 
-  .subtitulo-white-dev{
-   
-  }
   
   .icon-reposive{
     width: 25%;
@@ -52,19 +49,6 @@
     width: 90%;
   }
 
-  .fundoCard-terco-img{
-    background-image:url("../img/card/responive-terco.jpg");
-    background-position: center;
-  }
-  .fundoCard-agcf-img{
-    background-image:url("../img/card/responive-agcf.jpg");
-    background-position: center;
-  }
-  .fundoCard-4ucode-img{
-    background-image:url("../img/card/responive-4ucode.jpg");
-    background-position: center;
-  }
-
 
  
 
@@ -74,6 +58,18 @@
 
 /*Desktop*/
 @media (min-width: 768px) {
+.fundoCard-terco{
+  height: 97%;
+}
+
+.fundoCard-agcf{
+  height: 97%;
+}
+
+.fundoCard-4ucode{
+  height: 97%;
+}
+
 
 }
 

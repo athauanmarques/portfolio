@@ -12,12 +12,19 @@
  --color-letra: #F0E3CA;
  --color-gradiente: linear-gradient(to bottom, #21201d, #252421, #292825, #2e2d2a, #32312e);
 /*habilidades*/
---color-html:#FC490B;
+--color-react:#61DAFB;
+--color-node:#83CD29;
+--color-mongodb: #4FAA41;
 --color-bootstrap:#7952B3;
---color-javascript:#FFDF00;
+--color-php:#6181B6;
 --color-wordpress:#2196F4;
---color-git:#CA669B;
- /*Fontes*/
+--color-javascript:#FFDF00;
+--color-sass:#CA669B;
+--color-css:#1572B6;
+--color-html:#E44D26;
+--color-git:#F34F29;
+--color-github:#fffdfd;
+ /*--Fontes--*/
  --font-padrao: 'Inconsolata', monospace;
  --font-linguagem: 'PT Sans Narrow', sans-serif;
 }
@@ -43,6 +50,10 @@ p{
   font-size: 0.8rem;
 }
 
+.barraTitulo{
+margin-left:  10%;
+margin-right:  10%;
+}
 .titulo-cor, a{
   color: var(--color-padrao);
 }
@@ -116,24 +127,6 @@ header{
   width: 80%;
 }
 
-.cardev{
-  font-family: var(--font-linguagem);
-  color: var(--color-letra);
-  background-color: var(--color-fundo-segundario);
-  border-radius: 10px;
-  height: 320px;
-  width: 320px;
-}
-
-.cardev-img{
-  height: 328px;
-  width: 100%;
-  border-radius: 10px;
-}
-.imgdev{
-  width: 128px;
-  height: 128px;
-}
 
 #trabalhos{
   background-color: var(--color-fundo-segundario);
@@ -149,30 +142,84 @@ header{
   margin: 10px;
 }
 /*hovers dos icons */
-#card-hover-html:hover path{
-  fill: var(--color-html);
+/*------ React ----------*/
+#card-hover-react:hover path{
+  fill: var(--color-react);
 }
-#letra-hover-html:hover {
-  color:var(--color-html);
+#letra-hover-react:hover {
+  color:var(--color-react);
 }
+/*------ Node ----------*/
+#card-hover-node:hover path{
+  fill: var(--color-node);
+}
+#letra-hover-node:hover {
+  color:var(--color-node);
+}
+/*------ mongodb ----------*/
+#card-hover-mongodb:hover path{
+  fill: var(--color-node);
+}
+#letra-hover-mongodb:hover {
+  color:var(--color-node);
+}
+
+/*------ bootstrap ----------*/
 #card-hover-bootstrap:hover path{
   fill: var(--color-bootstrap);
 }
 #letra-hover-bootstrap:hover {
   color:var(--color-bootstrap);
 }
-#card-hover-javascript:hover path{
-  fill:var(--color-javascript);
+
+/*------ PHP ----------*/
+#card-hover-php:hover path{
+  fill: var(--color-php);
 }
-#letra-hover-javascript:hover {
-  color:var(--color-javascript);
+#letra-hover-php:hover {
+  color:var(--color-php);
 }
+
+/*------ wordpress ----------*/
 #card-hover-wordpress:hover path{
   fill: var(--color-wordpress);
 }
 #letra-hover-wordpress:hover {
   color: var(--color-wordpress);
 }
+
+/*------ javascript ----------*/
+#card-hover-javascript:hover path{
+  fill:var(--color-javascript);
+}
+#letra-hover-javascript:hover {
+  color:var(--color-javascript);
+}
+/*------ Sass ----------*/
+#card-hover-sass:hover path{
+  fill:var(--color-sass);
+}
+#letra-hover-sass:hover {
+  color:var(--color-sass);
+}
+
+/*------ css ----------*/
+#card-hover-css:hover path{
+  fill:var(--color-css);
+}
+#letra-hover-css:hover {
+  color:var(--color-css);
+}
+
+/*------ html ----------*/
+#card-hover-html:hover path{
+  fill: var(--color-html);
+}
+#letra-hover-html:hover {
+  color:var(--color-html);
+}
+
+/*------ git ----------*/
 #card-hover-git:hover path{
   fill:var(--color-git);
 }
@@ -180,34 +227,56 @@ header{
   color: var(--color-git);
 }
 
+/*------ github ----------*/
+#card-hover-github:hover path{
+  fill:var(--color-github);
+}
+#letra-hover-github:hover {
+  color: var(--color-github);
+}
+
 .remover-link-cor {
  text-decoration: none;
  color: var(--color-letra);
 }
 
+.cardTrabalhos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tituloCardTrabalho{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Card: Fila Livre*/
+.fundoCard-filalivre{
+  background-image:url("../img/card/filalivre-card.jpg");
+  background-size:cover;
+}
+
 /*Card: Santo Terço*/
 .fundoCard-terco{
   background-image:url("../img/card/santoTerco-card.jpg");
+  background-size:cover;
 }
-.fundoCard-terco-img{
-  background-image:url("../img/card/santoTerco.jpg");
-}
+
 
 /*Card: AGCF*/
 .fundoCard-agcf{
-  background-image:url("../img/card/agcf-card.png");
-}
-.fundoCard-agcf-img{
-  background-image:url("../img/card/agcf.jpg");
+  background-image:url("../img/card/agcf-card.jpg");
+  background-size:cover;
 }
 
 /*Card: 4uCode*/
 .fundoCard-4ucode{
-  background-image:url("../img/card/4ucode-card.png");
+  background-image:url("../img/card/4ucode-card.jpg");
+  background-size:cover;
 }
-.fundoCard-4ucode-img{
-  background-image:url("../img/card/4ucode.jpg");
-}
+
 
 .botao-card{
   background: var(--color-botao);
@@ -218,9 +287,12 @@ header{
   border-radius: 4px;
   border-color: transparent;
 }
+
+
 .botao-card:hover{
   background: var(--color-hover);
 }
+
 
 .contato-descricao{
   width: 50%;
