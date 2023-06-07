@@ -123,8 +123,14 @@ header{
   font-weight: 900;
 }
 
-.text-bio{
-  width: 80%;
+.destaque{
+  font-weight: 500;
+  font-style: oblique;
+}
+
+.text-bemvindo{
+margin-left: 22%;
+max-width: 60%;
 }
 
 
