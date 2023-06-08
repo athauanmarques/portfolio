@@ -46,6 +46,11 @@ span {
   font-family: var(--font-padrao);
 }
 
+strong{
+  color: var(--color-letra);
+  font-family: var(--font-padrao);
+}
+
 p{
   font-size: 0.8rem;
 }
@@ -123,14 +128,24 @@ header{
   font-weight: 900;
 }
 
-.destaque{
-  font-weight: 500;
-  font-style: oblique;
-}
 
 .text-bemvindo{
 margin-left: 22%;
 max-width: 60%;
+}
+
+.text-historia{
+  margin-left: 10%;
+  max-width: 90%;
+  }
+
+.img-historia{
+  width: 325px;
+  height: 250px;;
+}
+
+.accordion-button:active {
+ background-color: #4FAA41;
 }
 
 
@@ -286,8 +301,19 @@ max-width: 60%;
 
 .botao-card{
   background: var(--color-botao);
+  color: var(--color-botao);
   padding: 5px;
   margin: 25px;
+  height: 32px;
+  width:  110px;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+ .botao-historia{
+  background: var(--color-padrao);
+  padding: 15px;
+  margin: 15px;
   height: 32px;
   width:  110px;
   border-radius: 4px;
