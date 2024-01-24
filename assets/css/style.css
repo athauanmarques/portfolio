@@ -1,5 +1,28 @@
- @import url('http://fonts.cdnfonts.com/css/gotham');
- @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Sarala&display=swap');
+/*
+@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Sarala&display=swap');
+*/
+
+@font-face {
+  font-family: 'Gotham Ultra';
+  src: url('../fonts/Gotham-Ultra.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham Black';
+  src: url('../fonts/Gotham-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sarala';
+  src: url('../fonts/Sarala-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sarina';
+  src: url('../fonts/Sarina-Regular.ttf') format('truetype');
+}
+
 
  :root{
   --color-pri-background: #3F0770;
@@ -77,7 +100,7 @@ nav a{
 
 
 .ceoTitulo{
-  font-family: 'Gotham Light', sans-serif;
+  font-family: 'Gotham Black', sans-serif;
   font-weight: 800;
 }
 
@@ -104,7 +127,7 @@ footer {
 }
 
 footer span {
-  font-family: 'Mr Dafoe', cursive;
+  font-family: 'Sarina', cursive;
   text-transform:capitalize;
   font-size:  1.5em;
   color: #fff;
@@ -125,7 +148,7 @@ footer span:hover{
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: 'Gotham Light', sans-serif;
+	font-family: 'Sarala', sans-serif;
 	font-size:20px;
 	font-weight:bold;
 	padding:24px 32px;

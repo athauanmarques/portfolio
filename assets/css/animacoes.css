@@ -60,9 +60,9 @@
 /*animação digitação*/
 
 .tituloAnima {
-  width: 14ch;
+  width: 19ch;
   border-right: 3px solid;
-  animation: blink 1s step-end infinite, type 2.5s steps(14) forwards;
+  animation: blink 1s step-end infinite, type 2.5s steps(21) forwards;
   overflow: hidden;
   white-space: nowrap;
 }
