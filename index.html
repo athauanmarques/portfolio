@@ -352,7 +352,8 @@
                         <p class="text-center">Resta alguma dúvida? Preencha os campos abaixo com os seguintes dados que
                             em breve entraremos em contato.
                         </p>
-                        <form action="#" method="post">
+                        <form action="https://formsubmit.co/64840b5b956e039bd5e349bb6e7f4819 " id="target" method="POST">
+                            <input type="hidden" name="_token" value="pxnJd9ADbaWQwOhu3wSzTAOFCSrWReIqrT1cSuS5">   
                             <div class="form-group">
                                 <input type="text" placeholder="Nome" class="form-control" id="nome" name="nome"
                                     required>
@@ -364,17 +365,19 @@
                             </div>
                             <br>
                             <div class="form-group">
-                                <input type="text" placeholder="Assunto" class="form-control" id="nome" name="nome"
+                                <input type="text" placeholder="Assunto" class="form-control" id="subject" name="subject"
                                     required>
                             </div>
                             <br>
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Mensagem" id="mensagem" name="mensagem"
-                                    rows="4" required></textarea>
+                                <textarea class="form-control" placeholder="Envie a sua mensagem" id="message" name="message"
+                                    rows="8" required></textarea>
                             </div>
                             <br>
+                            <input type="hidden" value="" name="url">
                             <button type="submit" class="btn btn-primary text-light">Enviar Mensagem</button>
                         </form>
+                        
                     </div>
                 </div>
             </div>
@@ -439,7 +442,8 @@
         crossorigin="anonymous"></script>
     <!--Script: Animações SVGs-->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="js/mail.js"></script>
 </body>
 
 </html>
