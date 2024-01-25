@@ -1,6 +1,48 @@
-/*Mobile*/
-@media (max-width: 768px) {
 
+/*Desktop*/
+@media (min-width: 768px) {
+  header h5 {
+    margin-right: 25%;
+  }
+
+  .servicos h3 col-sms-6 {
+    font-size: 0.5em;
+  }
+
+
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+    right: 25%;
+    display: none;
+  }
+
+  header h5 {
+    font-size: 1em;
+    display: none;
+  }
+
+  .responsivel-rede-social {
+    display: none;
+  }
+
+
+ .rodape-msg{
+    font-size: 0.6em;
+  }
+.rodape-imagem{
+  width: 1500px;
+}
+
+  .responsivel-logo {
+    width: 218px;
+  }
+  .habilidades img{
+    width: 25%;
+  }
 
   .sobre h1 {
     font-size: 2.5em;
@@ -40,69 +82,7 @@
     height: 250px;
   }
 
-}
-
-
-/*Desktop*/
-@media (min-width: 768px) {
-  header h5 {
-    margin-right: 25%;
-  }
-
-  .servicos h3 col-sms-6 {
-    font-size: 0.5em;
-  }
-
-
-}
-
-/*ultra wide*/
-@media (min-width: 1245px) {
-
-  .sobre-texto {
-    margin-left: auto;
-    margin-right: auto;
-    width: 351px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-
-}
-
-
-
-
-
-/* --------------------- Titulo header-----------------------*/
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2em;
-    right: 25%;
-    display: none;
-  }
-
-  header h5 {
-    font-size: 1em;
-    display: none;
-  }
-
-  .responsivel-rede-social {
-    display: none;
-  }
-
-
-  .responsivel-logo {
-    width: 218px;
-  }
-  .habilidades img{
-    width: 25%;
-  }
-
-
-
-
+ 
 }
 
 @media (max-width: 1012px) {
@@ -141,9 +121,18 @@
     width: 418px;
   }
 
+  .sobre-texto {
+    margin-left: auto;
+    margin-right: auto;
+    width: 351px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
 
 }
+
+
 
 @media (min-width: 1490px) {
   header h1 {
