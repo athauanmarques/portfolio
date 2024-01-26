@@ -23,12 +23,12 @@ Meu Portfólio Pessoal é uma plataforma centralizada onde compartilho informaç
 
 1. **Clone o Repositório:**
     ```bash
-    git clone https://github.com/seu-usuario/portfolioamc.git
+    git clone https://github.com/seu-usuario/portfolio.git
     ```
 
 2. **Navegue até o Diretório:**
     ```bash
-    cd portfolioamc
+    cd portfolio
     ```
 
 3. **Abra o Arquivo index.html no Navegador:**
