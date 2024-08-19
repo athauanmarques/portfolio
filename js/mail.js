@@ -1,22 +1,26 @@
-$(document).ready(function () {
-    // Intercepta o evento de envio do formulário
-    $('#target').submit(function (event) {
-        // Evita o envio padrão do formulário
-        event.preventDefault();
 
-        // Realize a lógica de verificação do envio aqui (pode ser uma chamada AJAX, etc.)
+    document.getElementById('target').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o redirecionamento padrão após o envio
 
-        // Simulando um envio bem-sucedido para teste
-        var envioBemSucedido = true;
+        // Obtém os dados do formulário
+        let formData = new FormData(this);
 
-        if (envioBemSucedido) {
-            // Exibe o modal de sucesso
-            $('#SucessoEnvio').modal('show');
-            // Limpa os campos do formulário
-            $('#target')[0].reset();
-        } else {
-            // Exibe o modal de erro
+        // Envia o formulário via Fetch API
+        fetch('/', {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            if (response.ok) {
+                // Se o envio for bem-sucedido, exibe o modal de sucesso
+                $('#SucessoEnvio').modal('show');
+            } else {
+                // Se houver um erro, exibe o modal de erro
+                $('#ErroEnvio').modal('show');
+            }
+        }).catch(() => {
+            // Caso haja um erro de rede ou similar, exibe o modal de erro
             $('#ErroEnvio').modal('show');
-        }
+        });
     });
-});
+
